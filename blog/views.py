@@ -10,7 +10,8 @@ def load_posts():
     return posts
 
 def landing_page(request):
-    return render(request, 'blog/index.html')
+    posts = load_posts()
+    return render(request, 'blog/index.html',{'posts': posts})
 
 def posts(request):
     posts = load_posts()

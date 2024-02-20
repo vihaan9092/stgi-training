@@ -1,14 +1,23 @@
 [
     {
-        "id": "1",
-        "title": "Post One",
-        "summary": "This is the summary of post one.",
-        "content": "Full content of post one..."
+        "id": "understanding-async-js",
+        "title": "Understanding Asynchronous JavaScript",
+        "summary": "Exploring the asynchronous nature of JavaScript and its implications in Node.js.",
+        "content": "Full content of Understanding Asynchronous JavaScript...",
+        "latest": true
     },
     {
-        "id": "2",
-        "title": "Post Two",
-        "summary": "This is the summary of post two.",
-        "content": "Full content of post two..."
+        "id": "nodejs-frameworks-explored",
+        "title": "Exploring Node.js Frameworks",
+        "summary": "A comparison of Express, Koa, and Hapi frameworks in Node.js.",
+        "content": "Full content of Exploring Node.js Frameworks...",
+        "latest": true
+    },
+    {
+        "id": "restful-apis-with-node",
+        "title": "Building RESTful APIs with Node.js",
+        "summary": "Learn to build efficient and secure RESTful APIs with Node.js.",
+        "content": "Full content of Building RESTful APIs with Node.js...",
+        "latest": true
     }
 ]

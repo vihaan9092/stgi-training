@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-Vihaan's Blog Site
+Vihaan's Tech Blog
 {% endblock %}
 
 {% block css_files %}
@@ -10,41 +10,44 @@ Vihaan's Blog Site
 {% endblock %}
 
 {% block content %}
-<section id="welcome">
-    <header>
+<section id="welcome" class="text-center">
+    <div class="container">
         <h2>Vihaan</h2>
-    </header>
-    <p>
-        Hi, I am Vihaan and I love to cook healthy food.
-    </p>
+        <p>
+            Hi, I am Vihaan, a full-stack developer with a passion for modern web technologies and open-source software.
+        </p>
+    </div>
 </section>
 
 <section id="latest-posts">
-    <h2>My Latest Posts</h2>
-    <ul>
-        <li>
-            <article class="post">
-                <div class="post__content">
-                    <h3>Healthy Smoothie</h3>
-                    <p>
-                        Smoothies are a great way to start your healthy day.
-                        Try a smoothie for breakfast.
-                        Keeps you energetic and full of vigour.
-                    </p>
-                </div>
-            </article>
-        </li>
-       
-    </ul>
+    <div class="container">
+        <h2 class="section-title">Latest Tech Insights</h2>
+        <ul>
+            {% for post in posts %}
+            {% if post.latest %}
+            <li>
+                <article class="post">
+                    <div class="post__content">
+                        <h3><a href="{% url 'single-post-page' post.id %}">{{ post.title }}</a></h3>
+                        <p>{{ post.summary }}</p>
+                    </div>
+                </article>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
 </section>
 
-<section class="about">
-    <h2>About Me</h2>
-    <p>
-        I love to write programs and love to cook.
-    </p>
-    <p>
-        My goal is to teach programming and help people with obesity and diabetes.
-    </p>
+<section class="about text-center">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            My journey with coding began with JavaScript, and it led me to the world of Node.js and backend development. My blog shares insights on JavaScript, Node.js, and other web technologies.
+        </p>
+        <p>
+            Through my articles, I aim to help developers navigate the tech landscape and build robust, high-performance web applications.
+        </p>
+    </div>
 </section>
 {% endblock %}

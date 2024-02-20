@@ -1,8 +1,22 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
+{% block title %}
+{{ post.title }} - Vihaan's Tech Blog
+{% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "blog/index.css" %}">
+{% endblock %}
+
 {% block content %}
-    <h1>{{ post.title }}</h1>
-    <article>
-        {{ post.content | safe }}
-    </article>
+<section id="post-section">
+    <div class="container">
+        <h1 class="section-title">{{ post.title }}</h1>
+        <article class="post-content">
+            {{ post.content | safe }}
+        </article>
+    </div>
+</section>
 {% endblock %}
