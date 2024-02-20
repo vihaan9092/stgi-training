@@ -1,4 +1,75 @@
-img {
-    width: 100px;
-    height: 100px;
+body {
+    background: #f5f5f5;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+section#welcome,
+section.about {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+section#welcome {
+    border-bottom: 4px solid #4CAF50;
+}
+
+section#latest-posts {
+    background: #e9ecef;
+    padding: 2rem;
+}
+
+section#latest-posts h2,
+section.about h2 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+section#latest-posts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section#latest-posts li {
+    margin-bottom: 1rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.post__content h3 {
+    margin-top: 0;
+}
+
+.about {
+    background: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .post__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .post__content h3 {
+        flex-basis: 40%;
+    }
+
+    .post__content p {
+        flex-basis: 60%;
+    }
 }

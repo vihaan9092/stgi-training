@@ -1,0 +1,14 @@
+[
+    {
+        "id": "1",
+        "title": "Post One",
+        "summary": "This is the summary of post one.",
+        "content": "Full content of post one..."
+    },
+    {
+        "id": "2",
+        "title": "Post Two",
+        "summary": "This is the summary of post two.",
+        "content": "Full content of post two..."
+    }
+]
